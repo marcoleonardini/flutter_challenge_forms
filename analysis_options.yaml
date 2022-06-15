@@ -1,0 +1,28 @@
+
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  exclude:
+    - lib/**.freezed.dart
+    - lib/**.g.dart
+  errors:
+    missing_required_param: error
+    missing_return: error
+    must_be_immutable: error
+    todo: warning
+    
+linter:
+  rules:
+    avoid_classes_with_only_static_members: false
+    overridden_fields: false
+    sort_pub_dependencies: false
+    omit_local_variable_types: true
+    always_put_required_named_parameters_first: true
+    use_key_in_widget_constructors: true
+    prefer_const_constructors: true
+    prefer_const_constructors_in_immutables: true
+    require_trailing_commas: true
+    constant_identifier_names: true
+    file_names: true
+
+
